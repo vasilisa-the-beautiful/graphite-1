@@ -1,10 +1,11 @@
 html
   font-family: $base-font-family
   font-size: 2.8vw
+  font-weight: 400
   background-color: $backgroud-color
   color: $text-color
   height: 100%
-  line-height: 1.45
+  line-height: 1.55
 
 pre, code
   background-color: lighten($backgroud-color, 15%)
@@ -37,14 +38,31 @@ body
     flex: 1
 
 header, main, footer
-  max-width: 600px
+  max-width: 650px
   width: 92%
 
 h1
-  font-size: 1.2rem
+  margin: 1rem 0
+  font-size: 1.4rem
+  font-weight: 500
 
-p
-  margin: 0 0 1em 0
+h2
+  font-size: 1rem
+  font-weight: 700
+  padding-top: .75rem
+
+h3
+  font-size: .8rem
+  font-weight: 700
+  letter-spacing: .05em
+  padding-top: .75rem
+  text-transform: uppercase
+
+h4, h5, h6
+  font-size: .8rem
+  font-weight: 700
+  letter-spacing: .04em
+  padding-top: .75rem
 
 a
   color: $text-color
@@ -53,15 +71,18 @@ a
   &:hover
     color: $theme-color
 
-nav a,
-p a
-  font-variant: small-caps
-  letter-spacing: 0.05rem
+p
+  margin: 0 0 .75em 0
+  & a
+    font-weight: 300
+    letter-spacing: 0.04rem
+    padding: 0 .05em
+    text-transform: lowercase
 
-p a
-  font-size: 0.9em
-  font-weight: 300
-  padding: 0 .05em
+blockquote
+  font-style: italic
+  font-size: .9rem
+  padding: .5rem 0
 
 .site-header
   margin: 24px 0
@@ -74,8 +95,6 @@ p a
   & a
     font-size: 2rem
     font-variant: none
-    font-weight: 600
-    letter-spacing: 0
   & a:hover
     color: $text-color
 
@@ -88,6 +107,10 @@ p a
   & li
     display: inline-block
     margin: .5rem 1rem
+
+.page-link
+  font-variant: small-caps
+  letter-spacing: 0.04rem
 
 .site-footer
   padding-top: 2rem
@@ -112,18 +135,26 @@ p a
   & li
     list-style: none
   & h3
-    margin-top: 0rem
-  & a
-    font-variant: none
+    margin: 0
+    padding: 0
 
 .post-link
+  display: inline-block
   font-size: 1.2rem
-
-.post-title
-  margin-top: 0
+  font-weight: 400
+  margin: 0 0 1.5rem 0
+  padding: 0
+  text-transform: none
 
 .post-meta
-  font-size: 14px
+  font-size: .7rem
+
+.post-header
+  .post-title
+    margin: 1rem 0 0 0
+  .post-meta
+    display: inline-block
+    margin: 0 0 1rem 0
 
 @media all and (max-width:520px)
   html
