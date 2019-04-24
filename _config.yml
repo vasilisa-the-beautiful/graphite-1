@@ -1,0 +1,15 @@
+title: Graphite theme
+author: GitHub User
+email: your-email@domain.com
+
+social_media_links:
+  - link: https://twitter.com/jekyllrb/
+    icon: fa-twitter
+  - link: https://github.com/jekyll/
+    icon: fa-github
+
+show_rss: true # set to false to exclude rss icon from footer
+
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag

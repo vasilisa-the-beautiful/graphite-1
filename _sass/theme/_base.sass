@@ -1,0 +1,136 @@
+html
+  font-family: $base-font-family
+  font-size: 2.8vw
+  background-color: $backgroud-color
+  color: $text-color
+  height: 100%
+  line-height: 1.45
+
+pre, code
+  background-color: lighten($backgroud-color, 15%)
+  border-radius: 2px
+
+pre
+  padding: .5rem 1rem
+
+code
+  border-radius: 2px
+  font-family: 'Source Code Pro', monospace
+  font-size: .75rem
+  margin: 0 .05em
+  padding: .1em .2em
+
+figure
+  margin: 0
+
+body
+  box-sizing: border-box
+  border: .5rem solid $theme-color
+  align-items: center
+  display: flex
+  flex-direction: column
+  min-height: 100%
+  margin: 0
+  width: 100%
+  & main
+    flex: 1
+
+header, main, footer
+  max-width: 600px
+  width: 92%
+
+h1
+  font-size: 1.2rem
+
+p
+  margin: 0 0 1em 0
+
+a
+  color: $text-color
+  text-decoration: none
+  &:hover
+    border-bottom: 1px solid $theme-color
+
+nav a,
+p a
+  font-variant: small-caps
+  letter-spacing: 0.05rem
+
+p a
+  font-size: 0.9em
+  font-weight: 300
+  padding: 0 .05em
+
+.site-header
+  margin: 24px 0
+  text-align: center
+
+.site-title
+  display: block
+  margin: 0.67em 0
+  padding-top: 24px
+  & a
+    font-size: 2rem
+    font-variant: none
+    font-weight: 600
+    letter-spacing: 0
+  & a:hover
+    border-bottom: none
+
+.site-nav
+  border-bottom: 1px solid $text-color
+  border-top: 1px solid $text-color
+  & ul
+    margin: 0
+    padding: 0
+  & li
+    display: inline-block
+    margin: .5rem 1rem
+
+.site-footer
+  padding-top: 2rem
+  padding-bottom: 1rem
+  text-align: center
+
+.social-media
+  font-size: 18px
+  margin: 0
+  padding: 0
+  & li
+    display: inline-block
+    list-style: none
+  & li:nth-child(n+2)
+    margin-left: 0.75em
+  & li a:hover
+    border-bottom: none
+    color: $theme-color
+
+.post-list
+  margin: 0
+  padding: 0
+  & li
+    list-style: none
+  & h3
+    margin-top: 0rem
+  & a
+    font-variant: none
+
+.post-link
+  font-size: 1.2rem
+
+.post-title
+  margin-top: 0
+
+.post-meta
+  font-size: 14px
+
+@media all and (max-width:520px)
+  html
+    font-size: 18px
+  body
+    border-left: none
+    border-right: none
+
+@media all and (min-width:700px)
+  html
+    font-size: 20px
