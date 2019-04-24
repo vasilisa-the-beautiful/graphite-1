@@ -15,7 +15,7 @@ pre
 
 code
   border-radius: 2px
-  font-family: 'Source Code Pro', monospace
+  font-family: $code-font-family
   font-size: .75rem
   margin: 0 .05em
   padding: .1em .2em
@@ -48,8 +48,9 @@ p
 a
   color: $text-color
   text-decoration: none
+  transition: color 300ms
   &:hover
-    border-bottom: 1px solid $theme-color
+    color: $theme-color
 
 nav a,
 p a
@@ -75,7 +76,7 @@ p a
     font-weight: 600
     letter-spacing: 0
   & a:hover
-    border-bottom: none
+    color: $text-color
 
 .site-nav
   border-bottom: 1px solid $text-color
@@ -102,7 +103,6 @@ p a
   & li:nth-child(n+2)
     margin-left: 0.75em
   & li a:hover
-    border-bottom: none
     color: $theme-color
 
 .post-list
