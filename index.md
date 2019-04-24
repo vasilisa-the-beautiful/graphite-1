@@ -8,6 +8,6 @@
 layout: default
 ---
 
-## Welcome to Graphite!
+## welcome to graphite!
 
-This is a minimal, text-focused blog theme for Jekyll.
+Graphite is a minimal, text-focused blog theme for Jekyll.
