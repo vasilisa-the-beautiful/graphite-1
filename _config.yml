@@ -16,6 +16,10 @@ theme_colors: # enclose hex codes in ' '
 
 show_rss: true # set to false to exclude rss icon from footer
 
+header_pages:
+  - about.md
+  - posts.md
+
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
