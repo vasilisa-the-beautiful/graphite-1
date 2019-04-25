@@ -1,13 +1,24 @@
 # jekyll-theme-graphite
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
+Graphite is a minimal, text-focused blog theme—built around the [IBM Plex](https://www.ibm.com/plex/) typeface— for Jekyll.
 
-To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
-
-TODO: Delete this and the text above, and describe your gem
-
+![graphite theme screenshot](/screenshot.png)
 
 ## Installation
+
+Make sure you already have a [full Ruby installation](https://jekyllrb.com/docs/installation/).
+
+Install Jekyll and bundler gems:
+
+    $ gem install bundler
+
+Create a new Jekyll site at `/myblog`:
+
+    $ jekyll new myblog
+
+Change into your new directory:
+
+    $ cd myblog
 
 Add this line to your Jekyll site's `Gemfile`:
 
@@ -29,13 +40,45 @@ Or install it yourself as:
 
     $ gem install jekyll-theme-graphite
 
+Build the site and make it available on a local server:
+
+    $ bundle exec jekyll serve
+
 ## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+Edit `_config.yml` to customize color and social media icons. Graphite uses [Font Awesome](https://fontawesome.com/icons?d=gallery) to generate social media icons by class name.
+
+```yaml
+title: Graphite theme
+author: GitHub User
+email: your-email@domain.com
+
+theme: jekyll-theme-graphite
+
+social_media_links:
+  - link: https://twitter.com/jekyllrb/
+    icon: fa-twitter
+  - link: https://github.com/jekyll/
+    icon: fa-github
+
+theme_colors: # enclose hex codes in ' '
+  theme: '#be5141'
+  text: '#58595e'
+  background: '#fff'
+  code-block: '#fbf8f4'
+
+show_rss: true # set to false to exclude rss icon from footer
+
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag
+```
+
+For further customization, check out [Jekyll themes](https://jekyllrb.com/docs/themes/).
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome [on GitHub](https://github.com/curtisupdike/graphite). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## Development
 
@@ -49,4 +92,3 @@ To add a custom directory to your theme-gem, please edit the regexp in `jekyll-t
 ## License
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
