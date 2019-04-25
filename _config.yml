@@ -1,6 +1,8 @@
 title: Graphite theme
 author: GitHub User
 email: your-email@domain.com
+baseurl: '/graphite'
+url: 'https://curtisupdike.github.io'
 
 social_media_links:
   - link: https://twitter.com/jekyllrb/
