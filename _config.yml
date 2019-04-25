@@ -5,7 +5,7 @@ email: your-email@domain.com
 social_media_links:
   - link: https://twitter.com/jekyllrb/
     icon: fa-twitter
-  - link: https://github.com/jekyll/
+  - link: https://curtisupdike.github.io/graphite/
     icon: fa-github
 
 theme_colors: # enclose hex codes in ' '
