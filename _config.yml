@@ -8,6 +8,12 @@ social_media_links:
   - link: https://github.com/jekyll/
     icon: fa-github
 
+theme_colors: # enclose hex codes in ' '
+  theme: '#be5141'
+  text: '#58595e'
+  background: '#fff'
+  code-block: '#fbf8f4'
+
 show_rss: true # set to false to exclude rss icon from footer
 
 plugins:
