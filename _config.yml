@@ -7,7 +7,7 @@ url: 'https://curtisupdike.github.io'
 social_media_links:
   - link: https://twitter.com/jekyllrb/
     icon: fa-twitter
-  - link: https://curtisupdike.github.io/graphite/
+  - link: https://github.com/curtisupdike/graphite
     icon: fa-github
 
 theme_colors: # enclose hex codes in ' '
