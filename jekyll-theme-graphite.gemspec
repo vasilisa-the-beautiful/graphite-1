@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-graphite"
-  spec.version       = "1.1.0"
+  spec.version       = "1.2.0"
   spec.authors       = ["Curtis Updike"]
   spec.email         = ["cjupdike9@gmail.com"]
   spec.summary       = "A minimal, text-focused blog theme for Jekyll."
