@@ -6,13 +6,13 @@ layout: page
 
   {%- if site.posts.size > 0 -%}
     <ul class="post-list">
-      {%- for post in site.categories.blog_post -%}
+      {%- for post in site.categories.gallery_post -%}
       <li>
         {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
         <h3>
           <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
+            <img src={{post.image | relative }} />
           </a>
         </h3>
         {%- if site.show_excerpts -%}
@@ -21,5 +21,6 @@ layout: page
       </li>
       {%- endfor -%}
     </ul>
-    {%- endif -%}
+  {%- endif -%}
+
 </div>
